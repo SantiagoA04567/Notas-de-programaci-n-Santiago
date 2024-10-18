@@ -1,0 +1,19 @@
+ // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        int numero;
+        do{
+            System.out.print("Escribe un numero: ");
+            numero = teclado.nextInt();
+            if(numero <= 0){
+              System.out.println("El numero es negativo");
+            } else {
+                System.out.println("El numero es positivo");
+            }
+        }while(numero >= 0);
+    }
+}
